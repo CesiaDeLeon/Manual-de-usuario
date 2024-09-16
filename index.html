@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Manual de Usuario</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
@@ -18,6 +18,7 @@
 
 <body>
   <style>
+
     html {
       scroll-padding-top: 100px;
     }
@@ -52,14 +53,6 @@
       transform: scale(1);
     }
 
-    .Video {
-      transition: transform 0.8s ease;
-    }
-
-    .Video:hover {
-      transform: scale(1.02);
-    }
-
     .PDF {
       margin-top: 50px;
       border-bottom: 10px black;
@@ -81,18 +74,18 @@
       font-family: 'Karla', sans-serif;
       font-size: 250%;
       font-weight: bold;
+      margin-top: 30px;
     }
 
     h3 {
       font-family: 'Karla', sans-serif;
       font-size: 170%;
-      margin-top: 30px;
+      margin-top: 10px;
     }
 
-    h2 {
+    h2 { 
       font-family: 'Karla', sans-serif;
-      font-size: 210%;
-      margin-top: 30px;
+      margin-top: 20px;
       font-weight: bold;
     }
 
@@ -120,43 +113,56 @@
     .nav-link {
       font-family: 'Karla', sans-serif;
       font-weight: bold;
-      font-size: 98%;
     }
 
     .formularioSolicitudes {
-      margin-top: 50px;
+      margin-top: 25px;
     }
 
     .Imágenes {
       width: 100%;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    background-color: #000; 
+    border-radius: 100%;
+    }
+
+    .carousel-control-prev-icon::before {
+    color: #fff; 
+    }
+
+    .carousel-control-next-icon::before {
+    color: #fff; 
+    }
   </style>
 
 
-  <div id="Web" class="Web">
+<div id="Web" class="Web">
+  <div class="navbar-brand">
     <div class="Barra2">
-      <nav class="Partes.Manual" style="background-color: rgb(210, 209, 209);">
-        <div class="flex align-items-center justify-content-center">
-          <nav id="navbar-example2" class="navbar px-3 mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(210, 209, 209);">
+        <div class="container-fluid">
             <div class="Logo">
               <div class="d-flex align-items-center justify-content-center">
-                <header class="navbar navbar-expand-lg bg-body-tertiary">
-                  <div class="container-fluid">
-                    <div class="logo">
-                      <a class="navbar-brand" href="/Manual/">
-                        <img src="Logo.png" alt="FINANSSOREAL S.A." width="110px">
-                      </a>
-                    </div>
-                  </div>
-                </header>
+                  <a class="navbar-brand" href="https://manualdeusuariofinanssoreal.netlify.app/">
+                    <img class="img-fluid" src="Logo.png" alt="FINANSSOREAL S.A." width="120px">
+                  </a>
               </div>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div>
               <h2 class="Manual" style="color: rgb(93, 137, 27);">
                 MANUAL DE USUARIO
               </h2>
             </div>
-            <ul class="nav nav-pills">
+            <div class="collapse navbar-collapse" id="navbarNav">        
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center w-45">
+            </div>
+            <ul class="nav nav-pills ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#Inicio">Inicio</a>
               </li>
@@ -176,24 +182,25 @@
                 <a class="nav-link" href="#Sesiones">Sesiones</a>
               </li>
             </ul>
-          </nav>
         </div>
       </nav>
     </div>
+  </div>
 
+    <div class="container-fluid">
     <div id="contenido" class="contenido">
       <div class="Partes">
-        <header class="container-fluid" style="text-align: center;">
+        <header class="container-fluid text-center" style="text-align: center;">
           <h1>
             MANUAL DE USUARIO NIVEL AGENCIA
           </h1>
         </header>
 
-        <section id="Inicio" style="margin-top: 25px;">
+        <section id="Inicio" style="margin-top: 15px;" class="mt-5">
           <header>
             <h1>Inicio de Sesión</h1>
           </header>
-          <p>
+          <p class="mt-5">
             En este apartado se ingresa el correo y contraseña de la cuenta, para poder iniciar
             sesión y navegar en el sistema.
           </p>
@@ -201,10 +208,10 @@
             <div id="carouselInicioSesion" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="Inicio.Sesión.png" class="d-block w-100" alt="Inicio de Sesión" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Inicio.Sesión.png" class="d-block w-100" alt="Inicio de Sesión" style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="InicioSesión2..png" class="d-block w-100" alt="Inicio de Sesión"
+                  <img class="img-fluid" src="InicioSesión2..png" class="d-block w-100" alt="Inicio de Sesión"
                     style="border-radius: 8px;">
                 </div>
               </div>
@@ -220,17 +227,17 @@
               </button>
             </div>
           </div>
-          <p style="margin-top: 25px;">
+          <p class="mt-5" style="margin-top: 25px;">
             Luego de haber iniciado sesión se mostrará la página de inicio, en la cual se puede observar la
             misión, visión y valores de la empresa Finanssoreal S.A.
           </p>
           <div class="Imágenes">
-            <img src="Mision,vision....png" class="d-block w-100" alt="" style="border-radius: 8px;">
+            <img class="img-fluid" src="Mision,vision....png" class="d-block w-100" alt="" style="border-radius: 8px;">
           </div>
-          <p style="margin-top: 25px;">
+          <p class="mt-5" style="margin-top: 25px;">
             En la parte superior derecha se encuentran las siguientes opciones: <br>
           <ul>
-            <li>Información de su cuenta en el apartado 'Perfil'</li>
+            <li>Información de su cuenta en el apartado 'Perfil', aquí podrá modificar su foto de perfil y sus datos</li>
             <li>Podrá modificar el tema de la página (claro u oscuro)</li>
             <li>El botón para cerrar la sesión del usuario</li>
           </ul>
@@ -239,14 +246,14 @@
             <div id="carouselinfoCuenta" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center align-items-center">
-                  <img src="InfoCuenta.png" width="50%" alt="Inicio de Sesión" style="border-radius: 8px;"
+                  <img class="img-fluid" src="InfoCuenta.png" width="50%" alt="Inicio de Sesión" style="border-radius: 8px;"
                     class="d-flex align-items-center justify-content-center">
                 </div>
                 <div class="carousel-item d-flex justify-content-center align-items-center">
-                  <img src="Modooscuro.png" class="d-block w-100" alt="Inicio de Sesión " style="border-radius: 8px;">
+                  <img class="img-fluid" src="Modooscuro.png" class="d-block w-100" alt="Inicio de Sesión " style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item d-flex justify-content-center align-items-center">
-                  <img src="InformaCuenta.png" width="50%" alt="Inicio de Sesión" style="border-radius: 8px;">
+                  <img class="img-fluid" src="InformaCuenta.png" width="45%" alt="Inicio de Sesión" style="border-radius: 8px;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselinfoCuenta"
@@ -262,18 +269,18 @@
             </div>
           </div>
 
-          <p style="margin-top: 25px;">
+          <p class="mt-5" style="margin-top: 25px;">
             En la parte superior izquierda se encuentra una barra de navegación, la cual muestra cada una de las
-            acciones que se pueden realizar dentro de la cuenta.
+            acciones que se pueden realizar dentro del sistema.
           </p>
           <div class="Imágenes">
             <div id="carouselNavbar" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center align-items-center">
-                  <img src="Navbar (2).png" width="80%" alt="Inicio de Sesión" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Navbar (2).png" width="80%" alt="Inicio de Sesión" style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item d-flex justify-content-center align-items-center">
-                  <img src="Navbar.png" alt="Inicio de Sesión" style="border-radius: 8px;" width="50%">
+                  <img class="img-fluid" src="Navbar.png" alt="Inicio de Sesión" style="border-radius: 8px;" width="40%">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselNavbar" data-bs-slide="prev">
@@ -288,11 +295,11 @@
           </div>
         </section>
 
-        <section id="Solicitudes" style="margin-top: 50px;">
+        <section id="Solicitudes" style="margin-top: 0px;">
           <header>
             <h1>Solicitudes</h1>
           </header>
-          <p>
+          <p class="mt-5">
             En el apartado de 'Solicitudes' se realizan las solicitudes para diversos financiamientos.<br>
             Con el botón 'Nueva solicitud' se podrá enviar una nueva solicitud.
             Si el usuario decide enviar una nueva solicitud, el botón lo llevará a un formulario.<br>
@@ -302,10 +309,10 @@
             <div id="carouselSoli" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="Solicitudes.png" class="d-block w-100" alt="Solicitudes" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Solicitudes.png" class="d-block w-100" alt="Solicitudes" style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Solicitudes2.png" class="d-block w-100" alt="Solicitudes"
+                  <img class="img-fluid" src="Solicitudes2.png" class="d-block w-100" alt="Solicitudes"
                     style="border-radius: 8px;">
                 </div>
               </div>
@@ -320,21 +327,20 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h2>Partes del formulario 'Nueva solicitud'</h2>
-
-            <h3>INFORMACIÓN PERSONAL DEL CLIENTE</h3>
-            <p>En este apartado se deben ingresar los datos del interesado, los campos con * [asterisco] son
+            <h3 class="mt-4">INFORMACIÓN PERSONAL DEL CLIENTE</h3>
+            <p class="mt-3">En este apartado se deben ingresar los datos del interesado, los campos con * [asterisco] son
               obligatorios. Luego de llenar los campos se selecciona el botón siguiente.</p>
             <div class="Imágenes">
               <div id="carouselInfoPersonal" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Datospersonales2.png" class="d-block w-100" alt="Datos personales"
+                    <img class="img-fluid d-block w-100" src="Datospersonales2.png" alt="Datos personales"
                       style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Datospersonales.png" class="d-block w-100" alt="Datos personales"
+                    <img class="img-fluid d-block w-100" src="Datospersonales.png" alt="Datos personales"
                       style="border-radius: 8px;">
                   </div>
                 </div>
@@ -352,9 +358,9 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>DATOS DE DOMICILIO</h3>
-            <p>En este apartado se ingresan los datos de alguna referencia de domicilio, de igual forma los
+            <p class="mt-3">En este apartado se ingresan los datos de alguna referencia de domicilio, de igual forma los
               campos con * [asterisco] son obligatorios.<br>
               En referencia de domicilio se coloca una pequeña referencia del color de la casa, o del lugar en el que se
               encuentra ubicada la misma.
@@ -365,14 +371,14 @@
               <div id="carouselDomicilio" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Domicilio.png" class="d-block w-100" alt="Datos de Domicilio" style="border-radius: 8px;">
+                    <img class="img-fluid d-block w-100" src="Domicilio.png" alt="Datos de Domicilio" style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Domicilio2.png" class="d-block w-100" alt="Datos de Domicilio"
+                    <img class="img-fluid d-block w-100" src="Domicilio2.png" alt="Datos de Domicilio"
                       style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Municipio (2).png" class="d-block w-100" alt="Inicio de Sesión"
+                    <img class="img-fluid d-block w-100" src="Municipio (2).png" alt="Inicio de Sesión"
                       style="border-radius: 8px;">
                   </div>
                 </div>
@@ -390,9 +396,9 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>DATOS LABORALES</h3>
-            <p style="margin-top: 25px;">
+            <p class="mt-3">
               En este apartado se ingresan los datos laborales del cliente.<br>
               En el campo tipo de cliente se selecciona una opción del listado:
             <ul>
@@ -404,11 +410,11 @@
               <div id="carouselLaboral" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="DatosLaborales.png" class="d-block w-100" alt="Datos Laborales"
+                    <img class="img-fluid d-block w-100" src="DatosLaborales.png" alt="Datos Laborales"
                       style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="DatosLaborales (2).png" class="d-block w-100" alt="Datos Laborales"
+                    <img class="img-fluid d-block w-100" src="DatosLaborales (2).png" alt="Datos Laborales"
                       style="border-radius: 8px;">
                   </div>
                 </div>
@@ -426,9 +432,9 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>REFERENCIAS</h3>
-            <p>
+            <p class="mt-3">
               En este apartado se ingresan los datos de referencia del cliente, no importa el número de contactos de
               referencia.<br>
               Luego de llenar los campos se selecciona el botón siguiente.
@@ -437,16 +443,16 @@
               <div id="carouselReferencias" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Referencias3.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
+                    <img class="img-fluid" src="Referencias3.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Referencias4.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
+                    <img class="img-fluid" src="Referencias4.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Referencias1.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
+                    <img class="img-fluid" src="Referencias1.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Referencias2.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
+                    <img class="img-fluid" src="Referencias2.png" class="d-block w-100" alt="Referencias" style="border-radius: 8px;">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselReferencias"
@@ -463,9 +469,9 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>DATOS DE FINANCIAMIENTO</h3>
-            <p>
+            <p class="mt-3">
               En este apartado se ingresan los datos del transporte que se quiere financiar.<br>
               En el campo 'Modelo y linea' se coloca el modelo y la línea del vehículo que se financiará.<br> Todos los campos se deben llenar.
             </p>
@@ -473,11 +479,11 @@
               <div id="carouselFinanciamiento" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Financiamiento.png" class="d-block w-100" alt="Datos de Financiamiento"
+                    <img class="img-fluid" src="Financiamiento.png" class="d-block w-100" alt="Datos de Financiamiento"
                       style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Financiamiento1.png" class="d-block w-100" alt="Datos de Financiamiento"
+                    <img class="img-fluid" src="Financiamiento1.png" class="d-block w-100" alt="Datos de Financiamiento"
                       style="border-radius: 8px;">
                   </div>
                 </div>
@@ -495,9 +501,9 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>DOCUMENTOS ADJUNTOS</h3>
-            <p>
+            <p class="mt-3">
               En este aparatado se cargan los archivos que se requieren. Los campos marcados con * [asterisco] son
               obligatorios.
               <br>Después de completar los campos se selecciona el botón siguiente.
@@ -506,11 +512,11 @@
               <div id="carouselDocumentos" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="Documentos.png" class="d-block w-100" alt="Documentos Adjuntos"
+                    <img class="img-fluid" src="Documentos.png" class="d-block w-100" alt="Documentos Adjuntos"
                       style="border-radius: 8px;">
                   </div>
                   <div class="carousel-item">
-                    <img src="Documento2.png" class="d-block w-100" alt="Documentos Adjuntos"
+                    <img class="img-fluid" src="Documento2.png" class="d-block w-100" alt="Documentos Adjuntos"
                       style="border-radius: 8px;">
                   </div>
                 </div>
@@ -528,23 +534,23 @@
             </div>
           </div>
 
-          <div class="formularioSolicitudes">
+          <div class="formularioSolicitudes mt-5">
             <h3>ENVIAR SOLICITUD</h3>
-            <p>
+            <p class="mt-3">
               En este apartado se muestran las políticas de privacidad de la empresa antes de dar por finalizado
               el proceso de envio de solicitud con el botón 'Enviar'.
             </p>
             <div class="Imágenes">
-              <img src="Política.png" class="d-block w-100" alt="Política de Privacidad" style="border-radius: 8px;">
+              <img class="img-fluid" src="Política.png" class="d-block w-100" alt="Política de Privacidad" style="border-radius: 8px;">
             </div>
           </div>
         </section>
 
-        <section id="Contratos" style="margin-top: 25px;">
+        <section id="Contratos" class="mt-5" style="margin-top: 25px;">
           <header>
             <h1>Contratos</h1>
           </header>
-          <p>
+          <p class="mt-3">
             En el apartado de 'Contratos' se pueden verificar cada uno de los contratos que se han
             realizado, este apartado proporciona la siguiente información de los clientes:
             <ul>
@@ -558,10 +564,10 @@
             <div id="carouselContratos" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="Contratos1.png" class="d-block w-100" alt="Contratos" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Contratos1.png" class="d-block w-100" alt="Contratos" style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Contratos2.png" class="d-block w-100" alt="Contratos" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Contratos2.png" class="d-block w-100" alt="Contratos" style="border-radius: 8px;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselContratos"
@@ -578,11 +584,11 @@
           </div>
         </section>
 
-        <section id="Precalificados" style="margin-top: 25px;">
+        <section id="Precalificados" class="mt-5" style="margin-top: 25px;">
           <header>
             <h1>Precalificados</h1>
           </header>
-          <p>
+          <p class="mt-3">
             En este apartado se consulta el estado de la solicitud del cliente con las siguientes opciones:
           <ul>
             <li>Puede filtrar la búsqueda, por nombre o por solicitud rechazado u aprobada</li>
@@ -606,11 +612,11 @@
             <div id="carouselPrecalificacion" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="Precalificacion1.png" class="d-block w-100" alt="Precalificados"
+                  <img class="img-fluid" src="Precalificacion1.png" class="d-block w-100" alt="Precalificados"
                     style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Precalificacion2.png" class="d-block w-100" alt="Precalificados" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Precalificacion2.png" class="d-block w-100" alt="Precalificados" style="border-radius: 8px;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrecalificacion"
@@ -627,11 +633,11 @@
           </div>
         </section>
 
-        <section id="Cotizador" style="margin-top: 25px;">
+        <section id="Cotizador" class="mt-5" style="margin-top: 25px;">
           <header>
             <h1>Cotizador</h1>
           </header>
-          <p>En este apartado se puede cotizar el financiamiento de una moto o una moto taxi, con los siguientes
+          <p class="mt-3">En este apartado se puede cotizar el financiamiento de una moto o una moto taxi, con los siguientes
             pasos:</p>
           <ul>
             <li>Ingresar el precio del vehículo</li>
@@ -639,7 +645,7 @@
             <li>Seleccionar el tipo de vehículo (moto o moto taxi)</li>
             <li>Seleccionar los meses en los que se realizará el pago (puede ser desde 6 meses hasta 36 meses)</li>
           </ul>
-          <p>Después de ingresar los datos anteriores el sistema automáticamente mostrará lo siguiente:</p>
+          <p class="mt-3">Después de ingresar los datos anteriores el sistema automáticamente mostrará lo siguiente:</p>
           <ul>
             <li>El precio del vehículo</li>
             <li>Monto de enganche</li>
@@ -650,15 +656,15 @@
             <li>Cuota mensual</li>
             <li>Amortización</li>
           </ul>
-         <p>Este apartado también tiene la opción de imprimir todos los datos del cotizador con el botón 'IMPRIMIR'.</p>
+         <p class="mt-3">También se pueden imprimir los datos del cotizador con el botón 'IMPRIMIR'.</p>
           <div class="Imágenes">
             <div id="carouselCotizador" class="carousel slide carousel-fade">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="Cotizador1.png" class="d-block w-100" alt="Cotizador" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Cotizador1.png" class="d-block w-100" alt="Cotizador" style="border-radius: 8px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="Cotizador2.png" class="d-block w-100" alt="Cotizador" style="border-radius: 8px;">
+                  <img class="img-fluid" src="Cotizador2.png" class="d-block w-100" alt="Cotizador" style="border-radius: 8px;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselCotizador"
@@ -675,11 +681,12 @@
           </div>
         </section>
 
-        <section id="Sesiones" style="margin-top: 25px;">
+        
+        <section id="Sesiones" class="mt-5" style="margin-top: 25px;">
           <header>
             <h1>Sesiones</h1>
           </header>
-          <p>
+          <p class="mt-3">
             En el apartado 'Sesiones' se pueden gestionar las sesiones que se han iniciado en otros dispositivos.<br>
             En la parte inferior de la página se puede obtener la sigueinte información:
             <ul>
@@ -690,20 +697,19 @@
             </ul>
           </p>
           <div class="Imágenes">
-            <img src="Sesiones1.png" class="d-block w-100" alt="Sesiones" style="border-radius: 8px;">
+            <img class="img-fluid" src="Sesiones1.png" class="d-block w-100" alt="Sesiones" style="border-radius: 8px;">
           </div>
       </section>
      </div>
     </div>
   </div>
 
-  <div class="PDF">
+  <div class="PDF text-center my-5">
     <div class="d-grid gap-2 col-6 mx-auto">
       <button type="button" class="btn btn" style="background-color: rgb(131, 215, 5); margin-top: 50px;" onclick="generarPDF()">Descargar
         PDF</button>
     </div>
   </div>
-
 
   <script>
     function generarPDF() {
@@ -718,25 +724,25 @@
   </script>
 
   <footer class="text-light text-center py-3" style="margin-top: 50px; background-color: black;" width="100%">
-    <div class="Logo">
-      <img src="LogoFinal.png" alt="FINANSSOREAL S.A." width="256" height="74,5">
+    <div class="Logo mb-3">
+      <img class="img-fluid" src="LogoFinal.png" alt="FINANSSOREAL S.A." width="256" height="74,5">
     </div>
-    <div class="redes" style="background-color: black; margin-top: 25px;">
+    <div class="redes mb-3" style="background-color: black; margin-top: 25px;">
       <a href="https://www.facebook.com/finanssorealfinanciamientos" target="_blank" rel="noopener noreferrer">
-        <img src="facebook.svg" alt="Facebook" width="35px" height="25px"
+        <img class="img-fluid me-2" src="facebook.svg" alt="Facebook" width="35px" height="25px"
           style="filter: grayscale(100%) invert(92%) contrast(93%);">
       </a>
       <a href="https://www.instagram.com/finanssorealfinanciamientos?igsh=bjhqNWIydmVuNGs0" target="_blank"
         rel="noopener noreferrer">
-        <img src="instagram.svg" alt="Instagram" width="35px" height="25px"
+        <img class="img-fluid me-2" src="instagram.svg" alt="Instagram" width="35px" height="25px"
           style="filter: grayscale(100%) invert(92%) contrast(93%);">
       </a>
       <a href="https://walink.co/9ab1cd" target="_blank" rel="noopener noreferrer">
-        <img src="whatsapp.svg" alt="WharsApp" width="35px" height="25px"
+        <img class="img-fluid me-2" src="whatsapp.svg" alt="WharsApp" width="35px" height="25px"
           style="filter: grayscale(100%) invert(92%) contrast(93%);">
       </a>
     </div>
   </footer>
-
+</div>
 </body>
 </html>
